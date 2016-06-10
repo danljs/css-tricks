@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Tricks</title>
+</head>
+<body>
+<div class="button"><div class="arrow-up"></div></div>
+</body>
+<style type="text/css">
+	.button{
+		width: 140px;
+		height: 140px;
+		padding:10px;
+		margin: 10px;
+		background-color: #A4A1A1;
+		border-radius: 25px;
+	}
+	.arrow-up {
+		position: absolute;
+		width: 0; 
+		height: 0; 
+		border-left: 50px solid transparent; 
+		border-right: 50px solid transparent; 
+		border-bottom: 50px solid #dddddd;
+		margin: 40px 0 0 20px;
+	}
+	.arrow-up:after {
+		content:"";
+		position: absolute;
+		border-left: 20px solid #dddddd; 
+		border-right: 20px solid #dddddd; 
+		border-top: 20px solid #dddddd;
+		border-bottom: 20px solid #dddddd;
+		margin: 45px 0 0 -20px;
+	}
+
+	.arrow-up:before {
+		content:"";
+		position: absolute;
+		border-left: 50px solid #dddddd; 
+		border-right: 50px solid #dddddd; 
+		border-top: 10px solid #dddddd;
+		border-bottom: 10px solid #dddddd;
+		margin: -20px 0 0 -50px;
+	}
+</style>
+</html>
